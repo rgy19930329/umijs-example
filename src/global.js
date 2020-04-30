@@ -1,1 +1,1 @@
-// import 'anice-ui/style.css';
+import 'anice-ui/es/index/anice-ui.css';
