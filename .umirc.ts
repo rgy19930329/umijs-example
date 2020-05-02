@@ -7,4 +7,16 @@ export default defineConfig({
     type: 'none',
   },
   routes,
+  extraBabelPlugins: [
+    [
+      'import',
+      {
+        libraryName: 'anice-ui',
+        libraryDirectory: 'es',
+        style: (path: string, file: object) => {
+          return `${path}/style/index.css`;
+        },
+      },
+    ],
+  ],
 });
