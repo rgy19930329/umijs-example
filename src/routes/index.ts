@@ -11,6 +11,7 @@ const routes = [
     routes: [
       { path: '/', component: '@/pages/home' },
       { path: '/test', component: '@/pages/test' },
+      { path: '/demo', component: '@/pages/demo' },
     ],
   },
 ];
