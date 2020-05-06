@@ -13,7 +13,9 @@ export default defineConfig({
       {
         libraryName: 'anice-ui',
         libraryDirectory: 'es',
-        style: true,
+        style: (path: string, file: object) => {
+          return `${path}/style/index.css`;
+        },
       },
     ],
   ],
